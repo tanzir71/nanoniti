@@ -1,0 +1,28 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.3
+tqdm>=4.66.0
+tenacity>=8.2.3
+datasets>=2.18.0
+huggingface_hub>=0.22.0
+hf_xet>=1.5.0
+transformers>=4.40.0
+accelerate>=0.27.0
+peft>=0.10.0
+bitsandbytes>=0.43.3
+tensorboard>=2.16.0
+wandb>=0.17.0
+torch>=2.1.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
+scikit-learn>=1.3.0
+
+# PDF processing and OCR (collect_sources.py + pdf_processor.py)
+pdfplumber>=0.10.3
+pymupdf>=1.24.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+# NOTE: pytesseract requires the system Tesseract binary.
+#   Debian/Ubuntu: sudo apt-get install -y tesseract-ocr tesseract-ocr-ben
+#   macOS:         brew install tesseract tesseract-lang
+#   Windows:       https://github.com/UB-Mannheim/tesseract/wiki

@@ -1,0 +1,123 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+profile_default/
+ipython_config.py
+
+# --- Type checkers / linters / coverage ---
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# --- Secrets / local config (NEVER commit) ---
+.env
+.env.*
+.envrc
+*.pem
+*.key
+*.crt
+.huggingface/
+hf_token*
+
+# --- Data (large + reproducible from collect_sources.py) ---
+data/raw/
+data/parsed/
+data/clean/
+data/manifest.json
+data/dataset.jsonl
+data/train.jsonl
+data/val.jsonl
+data/failed_sources.log
+data/eval_report.json
+data/_baseline_run.log
+data/_delta_run.log
+
+# Keep the data folder + manifest skeleton committed so the layout is visible,
+# but skip every generated artifact. The .gitkeeps below stay.
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+
+# --- Training outputs ---
+checkpoints/
+runs/
+wandb/
+mlruns/
+outputs/
+*.pt
+*.bin
+*.safetensors
+*.gguf
+adapter_*/
+
+# --- Benchmark outputs (regenerated) ---
+benchmark/benchmark_report.json
+benchmark/benchmark_report.md
+
+# --- Caches ---
+.cache/
+.huggingface_cache/
+~/.cache/huggingface/
+
+# --- OS / temp ---
+*.tmp
+*.bak
+*.log
+*.pid
+*.seed
+*.tar
+*.tar.gz
+*.tgz
+*.zip
